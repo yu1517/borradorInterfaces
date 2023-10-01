@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=Roboto:ital,wght@0,300;1,400&display=swap');
+/*fuente
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;*/
+
+:root {
+    --fondo-color:#1C1F3A;
+    --items-color:#666a7f;
+    --border-color: #383838;
+    --text-color: #e7e7e7;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* <=========== NAVBAR STYLE ===========> */
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1C1F3A;
+    position: fixed;
+    border-bottom: 1px solid  var(--border-color);
+    justify-content: space-between;
+}
+
+header span i{
+    color: #fff;
+    font-size: 43.2px;
+    cursor: pointer;
+} 
+
+#logo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 15px;
+}
+.serch-content {
+    background-color: #373952;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+
+.center-navbar {
+    align-items: center;
+    display: flex;
+}
+
+.lens-img {
+    margin-left: 250px;
+}
+
+.right-navbar {
+    align-items: center;
+    display: flex;
+}
+
+.user-img {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+/* DESPEGABLE HAMB */
+
+.aside {
+    background-color: var(--fondo-color);
+    width: 260px;
+    position: absolute;
+    top: 0;    
+    bottom: 0;
+    overflow-y: hidden;
+    margin-top: 69px;
+    transition: 0.5s;
+}
+
+.aside1{
+    left: 0;
+}
+
+div.menus-desplegables:hover {
+    overflow-y: auto;
+}
+
+.desplegar {
+    transform: translateX(-100%);
+}
+
+.aside::-webkit-scrollbar {
+    width: 8px;
+}
+
+.aside::-webkit-scrollbar-thumb {
+    background-color: #909090;
+    border-radius: 5px;
+}
+
+.container-img {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 1px;
+    color: var(--text-color);
+    
+}
+
+.container-img div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+/* .container-img div img{
+    background-image:var(--items-color);
+} */
+
+.container-img div:hover {
+    background-color: #303030;
+}
+.container-img div span {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* DESPEGABLE PERFIL */
+
+#aside2{
+    right: 0;
+}
+ #aside2{
+    background-color: var(--fondo-color);
+    width: 260px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    margin-top: 69px;
+    transition: 0.5s;
+}
+
+#aside2::-webkit-scrollbar {
+    width: 8px;
+}
+
+#aside2::-webkit-scrollbar-thumb {
+    background-color: #909090;
+    border-radius: 5px;
+}
+.desplegar2 {
+    transform: translateX(100%);
+}
+
+
+/* HOME STYLE */
+
+.background-main {
+    background-color: #141520;
+    height: auto;
+    width: 100%;
+    padding-bottom: 42px;
+}
+
+.game-content {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.game-frame {
+    display: flex;
+    flex-direction: column;
+}
+
+.play {
+    position: absolute;
+    width: 185px;
+    height: 59.954px;
+    transform: rotate(-14.031deg);
+    flex-shrink: 0;
+    border-radius: 1px;
+    border-color: black;
+    background-image: linear-gradient(180deg, #F51F1F 0%, #FF00B8 100%);
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+.section-card {
+    padding-top: 60px;
+    padding-left: 200px;
+}
+
+.font-h1 {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: #FFF;
+    margin-right: 56px;
+    margin-top: 21px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 2px #000;
+}
+
+.content-img-card:hover {
+    transform: scale(1.1);
+}
+
+.content-img-card {
+    width: 219px;
+    height: 144px;
+    margin: 18px 15px 15px 16px;
+    transition: all, 300ms;
+}
+
+.img-card {
+    width: 100%;
+    height: 100%;
+}
+
+.content-description {
+    margin-top: 30px;
+    margin-left: 16px;
+}
+
+.font-h2 {
+    font-family: Open Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.font-h3 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.carousel-section{
+    width: 1027px;
+    height: 400px;
+}
+
+.carousel{
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.carousel-card{
+    scroll-snap-align: start;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.carousel::-webkit-scrollbar{
+    background-color: #1C1F3A;
+    border: 2px;
+    border-radius: 50px;
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb{
+    background:#373952;
+    border-radius: 50px;
+}
+
+
+
+/* FOOTER STYLE */
+
+.footer {
+    width: 100%;
+    height: 390px;
+    background-color: #1C1F3A;
+    box-shadow: 0px 25px 35px -15px rgba(15, 30, 82, 0.32);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.footer-info {
+    display: flex;
+    width: 218px;
+    height: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.footer-info:nth-child(1) {
+    padding-left: 57px;
+}
+
+.footer-info:nth-child(2) {
+    padding-left: 52px;
+    width: 273px;
+}
+
+.footer-info:nth-child(3) {
+    padding-left: 53px;
+}
+
+.footer-info:nth-child(4) {
+    padding-left: 90px;
+}
+
+.footer-info p {
+    width: 385px;
+}
+
+.footer-info div p {
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-info ul,
+.footer-info p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+}
+
+.footer-info ul li {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.footer-info ul li:first-child {
+    background: linear-gradient(180deg, #F51F1F 0%, #FF00B8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subscription-footer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+    padding-top: 19px;
+}
+
+.subscription-footer .subscription {
+    background-color: #1C1F3A;
+    width: 224px;
+    height: 46px;
+    border-radius: 5px;
+    border: 2px solid var(--fuente-gris, #878A9E);
+    margin-right: 10px;
+}
+
+.subscription::placeholder {
+    color: #FFF;
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 14px;
+}
+
+.subscription-footer button {
+    width: 150px;
+    height: 51px;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #212233;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.5px;
+}
+
+.social-footer {
+    padding-top: 22px;
+}
+
+.footer-info p {
+    text-align: left;
+}
+
+.social-footer img {
+    padding-right: 23px;
+    padding-top: 14px;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+
+.copyright p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.54px;
+}
+
+/* PAGINA DEL JUEGO */
+
+.play-content {
+    display: flex;
+    justify-content: center;
+    padding: 62px 0;
+}
+
+.game {
+    background-color: #000;
+    width: 1135px;
+    height: 600px;
+}
+
+.description-game-content {
+    width: 1135px;
+    height: 468px;
+    background-color: #212233;
+    margin: auto;
+}
+
+.font-body {
+    color: #FFF;
+    font-family: Roboto Mono;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.information-game-content {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 33px;
+    border-bottom: 2px solid #FFF;
+    padding: 20px 0;
+}
+
+.information-game button {
+    width: 141px;
+    height: 38px;
+    margin: 15px 0;
+}
+
+.information-img {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding-left: 380px;
+}
+
+.color-font {
+    color: #FFF;
+}
+
+.information {
+    width: 400px;
+}
+
+.gameplay-content {
+    margin: 0 33px;
+}
+
+.gameplay-content h2 {
+    padding-bottom: 20px;
+}
+
+.comunity-content {
+    width: 1135px;
+    height: 585px;
+    background-color: #212233;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    padding-bottom: 45px;
+}
+
+.write-comment-content {
+    width: 780px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+}
+
+.write-comment {
+    background-color: #D9D9D9;
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.write-comment p {
+    margin-left: 26px;
+}
+
+.send-comment {
+    width: 150px;
+    height: auto;
+}
+
+.send-comment button {
+    width: 100%;
+    height: 100%;
+}
+
+.font-button {
+    color: #1C1F3A;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.5px;
+}
+
+.comment-content {
+    width: 780px;
+    height: 123px;
+    border: 2px solid #878A9E;
+    background: #141520;
+    margin-top: 35px;
+}
+
+.info-comment {
+    width: 100%;
+    height: 32%;
+    border-bottom: 2px solid #878A9E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.user-name {
+    margin: 5px 15px;
+    color: #878A9E;
+}
+
+.comment {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.comment p {
+    width: 80%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+

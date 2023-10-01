@@ -1,0 +1,148 @@
+:root {
+    --fondo-color:#1C1F3A;
+    --items-color:#666a7f;
+    --border-color: #383838;
+    --text-color: #e7e7e7;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+/* <=========== NAVBAR STYLE ===========> */
+.navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1C1F3A;
+    position: fixed;
+    border-bottom: 1px solid  var(--border-color);
+    justify-content: space-between;
+}
+
+header span i, header img{
+    color: #fff;
+    font-size: 2.7rem;
+    cursor: pointer;
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 15px;
+}
+.serch-content {
+    background-color: #373952;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+}
+.center-navbar {
+    align-items: center;
+    display: flex;
+}
+
+.lens-img {
+    margin-left: 250px;
+}
+
+.right-navbar {
+    align-items: center;
+    display: flex;
+}
+
+.user-img {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+/* DESPEGABLE HAMB */
+
+#aside {
+    background-color: var(--fondo-color);
+    width: 260px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    margin-top: 69px;
+    transition: 0.5s;
+}
+aside:hover {
+    overflow-y: auto;
+}
+
+.desplegar {
+    transform: translateX(-100%);
+}
+
+#aside::-webkit-scrollbar {
+    width: 8px;
+}
+
+#aside::-webkit-scrollbar-thumb {
+    background-color: #909090;
+    border-radius: 5px;
+}
+
+.container-img {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 1px;
+    color: var(--text-color);
+    
+}
+
+.container-img div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+/* .container-img div img{
+    background-image:var(--items-color);
+} */
+
+.container-img div:hover {
+    background-color: #303030;
+}
+.container-img div span {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* DESPEGABLE PERFIL */
+
+#aside2{
+    background-color: var(--fondo-color);
+    width: 260px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    margin-top: 69px;
+    transition: 0.5s;
+}
+#aside2::-webkit-scrollbar {
+    width: 8px;
+}
+
+#aside2::-webkit-scrollbar-thumb {
+    background-color: #909090;
+    border-radius: 5px;
+}
+.desplegar2 {
+    transform: translateX(100%);
+}
+
+
+
+
+
